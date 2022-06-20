@@ -28,7 +28,8 @@ const port = process.env.PORT || 3000;
   });
   await page.waitForSelector('input');
   await page.evaluate(() => {
-    document.querySelector('.sqdOP').click();
+    console.log('evaluate', document.querySelector('.cmbtv > button'));
+    // document.querySelector('.cmbtv > button').click();
   });
 //   await browser.close();
 })();
